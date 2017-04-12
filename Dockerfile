@@ -8,4 +8,6 @@ RUN ln -s /usr/bin/nodejs /usr/bin/node
 
 WORKDIR /app
 
+EXPOSE 4000
+
 CMD ["bash"]
