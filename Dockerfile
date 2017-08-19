@@ -1,6 +1,6 @@
 FROM ruby
 
-RUN apt-get update && apt-get install -y nodejs npm
+RUN apt-get update && apt-get install -y nodejs npm graphicsmagick
 RUN gem install jekyll rdiscount kramdown exifr
 
 RUN npm install -g grunt-cli bower && echo '{ "allow_root": true }' > /root/.bowerrc
