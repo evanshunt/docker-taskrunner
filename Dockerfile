@@ -3,7 +3,7 @@ RUN curl -sL https://deb.nodesource.com/setup_4.x | bash -
 RUN apt-get update && apt-get install -y nodejs graphicsmagick
 RUN gem install jekyll rdiscount kramdown exifr compass
 
-RUN npm install -g grunt-cli bower && echo '{ "allow_root": true }' > /root/.bowerrc
+RUN npm install -g grunt-cli gulp-cli bower && echo '{ "allow_root": true }' > /root/.bowerrc
 
 WORKDIR /app
 
